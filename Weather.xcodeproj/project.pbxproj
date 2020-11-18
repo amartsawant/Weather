@@ -15,6 +15,12 @@
 		9008A17D2564EC2E0054C276 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9008A17B2564EC2E0054C276 /* LaunchScreen.storyboard */; };
 		9008A1882564EC2F0054C276 /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1872564EC2F0054C276 /* WeatherTests.swift */; };
 		9008A1932564EC2F0054C276 /* WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1922564EC2F0054C276 /* WeatherUITests.swift */; };
+		9008A1A52564ED540054C276 /* CountryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1A42564ED540054C276 /* CountryListViewController.swift */; };
+		9008A1A72564ED910054C276 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1A62564ED910054C276 /* WeatherData.swift */; };
+		9008A1AA2564EDD20054C276 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1A92564EDD20054C276 /* WeatherViewModel.swift */; };
+		9008A1AC2564EDE40054C276 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1AB2564EDE40054C276 /* CountryListViewModel.swift */; };
+		9008A1AE2564EE000054C276 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1AD2564EE000054C276 /* ServiceManager.swift */; };
+		9008A1B12564EE290054C276 /* WeatherDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1B02564EE290054C276 /* WeatherDataInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		9008A18E2564EC2F0054C276 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9008A1922564EC2F0054C276 /* WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherUITests.swift; sourceTree = "<group>"; };
 		9008A1942564EC2F0054C276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9008A1A42564ED540054C276 /* CountryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewController.swift; sourceTree = "<group>"; };
+		9008A1A62564ED910054C276 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		9008A1A92564EDD20054C276 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		9008A1AB2564EDE40054C276 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
+		9008A1AD2564EE000054C276 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		9008A1B02564EE290054C276 /* WeatherDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +111,14 @@
 		9008A16F2564EC2A0054C276 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				9008A1AF2564EE040054C276 /* Interactor */,
+				9008A1A82564EDB80054C276 /* ViewModel */,
+				9008A1A32564ECEA0054C276 /* Services */,
+				9008A1A22564EC7C0054C276 /* Controller */,
+				9008A1A12564EC750054C276 /* View */,
+				9008A1A02564EC5C0054C276 /* Model */,
 				9008A1702564EC2A0054C276 /* AppDelegate.swift */,
 				9008A1722564EC2A0054C276 /* SceneDelegate.swift */,
-				9008A1742564EC2A0054C276 /* ViewController.swift */,
 				9008A1762564EC2A0054C276 /* Main.storyboard */,
 				9008A1792564EC2E0054C276 /* Assets.xcassets */,
 				9008A17B2564EC2E0054C276 /* LaunchScreen.storyboard */,
@@ -126,6 +143,55 @@
 				9008A1942564EC2F0054C276 /* Info.plist */,
 			);
 			path = WeatherUITests;
+			sourceTree = "<group>";
+		};
+		9008A1A02564EC5C0054C276 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9008A1A62564ED910054C276 /* WeatherData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9008A1A12564EC750054C276 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9008A1A22564EC7C0054C276 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9008A1742564EC2A0054C276 /* ViewController.swift */,
+				9008A1A42564ED540054C276 /* CountryListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9008A1A32564ECEA0054C276 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9008A1AD2564EE000054C276 /* ServiceManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9008A1A82564EDB80054C276 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9008A1A92564EDD20054C276 /* WeatherViewModel.swift */,
+				9008A1AB2564EDE40054C276 /* CountryListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9008A1AF2564EE040054C276 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9008A1B02564EE290054C276 /* WeatherDataInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +326,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9008A1752564EC2A0054C276 /* ViewController.swift in Sources */,
+				9008A1AA2564EDD20054C276 /* WeatherViewModel.swift in Sources */,
+				9008A1A72564ED910054C276 /* WeatherData.swift in Sources */,
+				9008A1AE2564EE000054C276 /* ServiceManager.swift in Sources */,
+				9008A1B12564EE290054C276 /* WeatherDataInteractor.swift in Sources */,
+				9008A1A52564ED540054C276 /* CountryListViewController.swift in Sources */,
 				9008A1712564EC2A0054C276 /* AppDelegate.swift in Sources */,
 				9008A1732564EC2A0054C276 /* SceneDelegate.swift in Sources */,
+				9008A1AC2564EDE40054C276 /* CountryListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
