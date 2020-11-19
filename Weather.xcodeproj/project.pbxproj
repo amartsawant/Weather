@@ -21,6 +21,8 @@
 		9008A1AC2564EDE40054C276 /* CountryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1AB2564EDE40054C276 /* CountryListViewModel.swift */; };
 		9008A1AE2564EE000054C276 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1AD2564EE000054C276 /* ServiceManager.swift */; };
 		9008A1B12564EE290054C276 /* WeatherDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1B02564EE290054C276 /* WeatherDataInteractor.swift */; };
+		9008A1B32564FAD10054C276 /* WeatherDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1B22564FAD10054C276 /* WeatherDataParser.swift */; };
+		9008A1B5256525CA0054C276 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9008A1B4256525CA0054C276 /* CollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		9008A1AB2564EDE40054C276 /* CountryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListViewModel.swift; sourceTree = "<group>"; };
 		9008A1AD2564EE000054C276 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		9008A1B02564EE290054C276 /* WeatherDataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataInteractor.swift; sourceTree = "<group>"; };
+		9008A1B22564FAD10054C276 /* WeatherDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataParser.swift; sourceTree = "<group>"; };
+		9008A1B4256525CA0054C276 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 		9008A1A12564EC750054C276 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9008A1B4256525CA0054C276 /* CollectionCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				9008A1AD2564EE000054C276 /* ServiceManager.swift */,
+				9008A1B22564FAD10054C276 /* WeatherDataParser.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -334,6 +340,8 @@
 				9008A1712564EC2A0054C276 /* AppDelegate.swift in Sources */,
 				9008A1732564EC2A0054C276 /* SceneDelegate.swift in Sources */,
 				9008A1AC2564EDE40054C276 /* CountryListViewModel.swift in Sources */,
+				9008A1B5256525CA0054C276 /* CollectionCell.swift in Sources */,
+				9008A1B32564FAD10054C276 /* WeatherDataParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +517,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP9Q8GXBFA;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,6 +536,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP9Q8GXBFA;
 				INFOPLIST_FILE = Weather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
