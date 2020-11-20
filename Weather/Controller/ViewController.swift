@@ -35,13 +35,13 @@ class ViewController: UIViewController {
                 if self.refreshControl.isRefreshing {
                     self.refreshControl.endRefreshing()
                 }
-            }
-            
-            if let _ = error {
-                self.showAlert(title: "Error", message: "Problem in fetching places.\nplease try again later", action: "Ok")
-                return
-            }else {
-                DispatchQueue.main.async {
+                
+                
+                if let error = error {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.showAlert(title: "Problem in fetching data", message: error.localizedDescription, action: "Ok")
+                    }
+                }else {
                     self.collectionView.reloadData()
                 }
             }
@@ -137,7 +137,7 @@ extension ViewController {
         reloadView()
     }
 }
-    
+
 // MARK:- UIViewController Override
 
 extension ViewController {
