@@ -166,7 +166,7 @@ extension ViewController {
                     cellSize = CGSize(width: cellLength, height: defaultHeight)
                 }else if (UIDevice.current.userInterfaceIdiom == .phone){
                     // iPhone
-                    let cellLength = (viewSize.width/1.2)
+                    let cellLength = (viewSize.width/1.0)
                     cellSize = CGSize(width: cellLength, height: defaultHeight)
                 }
             }else { // landscape
