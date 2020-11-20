@@ -128,7 +128,8 @@ class WeatherViewModel {
         }
         }else {
             self.weatherReport = nil
-            completion(nil)
+            let customError = AppError.appNoInputData
+            completion(customError)
         }
         
     }

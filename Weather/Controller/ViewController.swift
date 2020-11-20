@@ -40,6 +40,7 @@ class ViewController: UIViewController {
                 if let error = error {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         self.showAlert(title: "Problem in fetching data", message: error.localizedDescription, action: "Ok")
+                        self.collectionView.reloadData()
                     }
                 }else {
                     self.collectionView.reloadData()
@@ -175,7 +176,7 @@ extension ViewController {
                     cellSize = CGSize(width: cellLength, height: defaultHeight)
                 }else if (UIDevice.current.userInterfaceIdiom == .phone){
                     // iPhone
-                    let cellLength = (viewSize.width/2)
+                    let cellLength = (viewSize.width/1.5)
                     cellSize = CGSize(width: cellLength, height: defaultHeight)
                 }
             }

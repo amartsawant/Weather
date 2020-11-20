@@ -32,7 +32,8 @@ class ServiceManager {
                     // Success scenario
                     let responseString = String("response: \(String(describing: response))")
                     debugPrint(responseString)
-                    completion(nil, error)
+                    let customError = AppError.code(httpStatus.statusCode)
+                    completion(nil, customError)
                 } else {
                     // Failure scenario
                     completion(data, error)
@@ -41,8 +42,8 @@ class ServiceManager {
             dataTask.resume()
         } else {
             // Bad request
-            let error = NSError(domain:"Bad request", code: 400, userInfo: nil)
-            completion(nil, error)
+            let customError = AppError.httpInvalidRequest
+            completion(nil, customError)
         }
     }
 }
