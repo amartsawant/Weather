@@ -8,16 +8,20 @@
 
 import Foundation
 
-typealias weatherDataCompletionHandler = ((WeatherData?, Error?) -> Void)
+typealias weatherDataCompletionHandler = ((WeatherReport?, Error?) -> Void)
 
 class WeatherDataInteractor {
     private let url = ""
-    private let key = "" // TO DO :: move to safe store
     private let serviceManager = ServiceManager()
     
-    func featchWeatherData(for city: String, completion: @escaping weatherDataCompletionHandler) -> Void {
-        let url = "https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=d88ad2918fc6f0faf000bfe39b988e91"
+    private var apiKey: String? {// TO DO :: move to safe store
+        return Bundle.main.object(forInfoDictionaryKey: "APIKey") as? String
+    }
+    
+    func featchWeatherData(for places: [String: Int], completion: @escaping weatherDataCompletionHandler) -> Void {
         
+        let selectedPlaces = (places.values.map{String($0)}).joined(separator: ",")
+        let url = "https://api.openweathermap.org/data/2.5/group?id=\(selectedPlaces)&APPID=\(apiKey ?? "")"
         serviceManager.featchRemoteData(with: url) { (data, err) in
             
             if let error = err {
@@ -26,10 +30,11 @@ class WeatherDataInteractor {
             }
             
             if let data = data {
-                if let weatherData = WeatherDataParser().parseWeatherData(data: data) {
-                    completion(weatherData, nil)
+                if let WeatherReport = WeatherDataParser().parseWeatherData(data: data) {
+                    completion(WeatherReport, nil)
                 }
             }
         }
     }
+    
 }

@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct WeatherReport: Decodable {
+    let list: [WeatherData]
+}
+
 struct WeatherData: Decodable {
     let id: Int
     let city: String
@@ -33,31 +37,18 @@ struct WeatherData: Decodable {
         }
     }
     
-    
-    
     init(from decoder: Decoder) throws {
-//        do {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            id = try container.decode(Int.self, forKey: .id)
-            city = try container.decode(String.self, forKey: .city)
-           
-            let mainContainer = try container.nestedContainer(keyedBy: CodingKeys.MainKeys.self, forKey: .main)
-            humidity = try mainContainer.decode(Float.self, forKey: .humidity)
-            tempurature = try mainContainer.decode(Float.self, forKey: .tempurature).kelvinToCelcius()
-
-            let sysContainer = try container.nestedContainer(keyedBy: CodingKeys.SystemKeys.self, forKey: .sys)
-            sunrise = try sysContainer.decode(Date.self, forKey: .sunrise)
-            sunset = try sysContainer.decode(Date.self, forKey: .sunset)
-            
-//        } catch {
-//            debugPrint("handle parse error")
-//        }
-    
-    }
-}
-
-extension Float {
-    func kelvinToCelcius() -> Float {
-        return self - 273.15
+        
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        id = try container.decode(Int.self, forKey: .id)
+        city = try container.decode(String.self, forKey: .city)
+        
+        let mainContainer = try container.nestedContainer(keyedBy: CodingKeys.MainKeys.self, forKey: .main)
+        humidity = try mainContainer.decode(Float.self, forKey: .humidity)
+        tempurature = try mainContainer.decode(Float.self, forKey: .tempurature)
+        
+        let sysContainer = try container.nestedContainer(keyedBy: CodingKeys.SystemKeys.self, forKey: .sys)
+        sunrise = try sysContainer.decode(Date.self, forKey: .sunrise)
+        sunset = try sysContainer.decode(Date.self, forKey: .sunset)
     }
 }

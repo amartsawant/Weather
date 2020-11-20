@@ -9,7 +9,6 @@
 import UIKit
 
 class CollectionCell: UICollectionViewCell {
-
     weak var textLabel: UILabel!
 
     @IBOutlet weak var backgroundImageView: UIImageView!
@@ -29,6 +28,5 @@ class CollectionCell: UICollectionViewCell {
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        //self.textLabel.text = nil
     }
 }

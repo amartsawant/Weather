@@ -10,11 +10,11 @@ import Foundation
 
 class WeatherDataParser {
     
-    func parseWeatherData(data: Data) -> WeatherData? {
+    func parseWeatherData(data: Data) -> WeatherReport? {
         let decoder = JSONDecoder()
         do {
             decoder.dateDecodingStrategy = .secondsSince1970
-            let data = try decoder.decode(WeatherData.self, from: data)
+            let data = try decoder.decode(WeatherReport.self, from: data)
             return data
         } catch {
             print(error.localizedDescription)

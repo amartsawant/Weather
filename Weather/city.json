@@ -1,0 +1,332 @@
+[
+  {
+    "id": 2968805,
+    "name": "Villedieu-la-Blouère",
+    "state": "",
+    "country": "FR",
+    "coord": {
+      "lon": -1.06286,
+      "lat": 47.147381
+    }
+  },
+  {
+    "id": 2968815,
+    "name": "Paris",
+    "state": "",
+    "country": "FR",
+    "coord": {
+      "lon": 2.3486,
+      "lat": 48.853401
+    }
+  },
+  {
+    "id": 2968819,
+    "name": "Ville-d'Avray",
+    "state": "",
+    "country": "FR",
+    "coord": {
+      "lon": 2.19311,
+      "lat": 48.823582
+    }
+  },
+  {
+    "id": 2968822,
+    "name": "Villecroze",
+    "state": "",
+    "country": "FR",
+    "coord": {
+      "lon": 6.27542,
+      "lat": 43.58181
+    }
+  },
+  {
+    "id": 2968823,
+    "name": "Villecresnes",
+    "state": "",
+    "country": "FR",
+    "coord": {
+      "lon": 2.5394,
+      "lat": 48.72002
+    }
+  },
+  {
+    "id": 2968833,
+    "name": "Villechien",
+    "state": "",
+    "country": "FR",
+    "coord": {
+      "lon": -0.98652,
+      "lat": 48.578629
+    }
+  },
+  {
+    "id": 2968855,
+    "name": "Villebret",
+    "state": "",
+    "country": "FR",
+    "coord": {
+      "lon": 2.63827,
+      "lat": 46.26685
+    }
+  },
+  {
+    "id": 2643736,
+    "name": "Derry",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -7.30934,
+      "lat": 54.9981
+    }
+  },
+  {
+    "id": 2643737,
+    "name": "City of Derry",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -7.25,
+      "lat": 55.0
+    }
+  },
+  {
+    "id": 2643741,
+    "name": "City of London",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -0.09184,
+      "lat": 51.512791
+    }
+  },
+  {
+    "id": 2643743,
+    "name": "London",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -0.12574,
+      "lat": 51.50853
+    }
+  },
+  {
+    "id": 2643744,
+    "name": "City of London",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -0.08901,
+      "lat": 51.51334
+    }
+  },
+  {
+    "id": 2643745,
+    "name": "Londesborough",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -0.68333,
+      "lat": 53.883331
+    }
+  },
+  {
+    "id": 2643773,
+    "name": "Loftus",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -0.89459,
+      "lat": 54.555431
+    }
+  },
+  {
+    "id": 2643776,
+    "name": "Lofthouse",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -1.49697,
+      "lat": 53.729469
+    }
+  },
+  {
+    "id": 2643783,
+    "name": "Loddon",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": 1.48183,
+      "lat": 52.5327
+    }
+  },
+  {
+    "id": 2643788,
+    "name": "Lockington",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -0.48572,
+      "lat": 53.91415
+    }
+  },
+  {
+    "id": 2643791,
+    "name": "Lockerbie",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -3.35635,
+      "lat": 55.12302
+    }
+  },
+  {
+    "id": 2643797,
+    "name": "Lochwinnoch",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -4.63034,
+      "lat": 55.795212
+    }
+  },
+  {
+    "id": 2643806,
+    "name": "Lochranza",
+    "state": "",
+    "country": "GB",
+    "coord": {
+      "lon": -5.2,
+      "lat": 55.700001
+    }
+  },
+  {
+    "id": 1275339,
+    "name": "Mumbai",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 72.847939,
+      "lat": 19.01441
+    }
+  },
+  {
+    "id": 1275346,
+    "name": "Bolpur",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 87.716667,
+      "lat": 23.66667
+    }
+  },
+  {
+    "id": 1275354,
+    "name": "Bolānīkhodān",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 85.316673,
+      "lat": 22.1
+    }
+  },
+  {
+    "id": 1275362,
+    "name": "Bokāro",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 85.966667,
+      "lat": 23.783331
+    }
+  },
+  {
+    "id": 1275363,
+    "name": "Bokākhāt",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 93.599998,
+      "lat": 26.633329
+    }
+  },
+  {
+    "id": 1275364,
+    "name": "Bokajān",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 93.783333,
+      "lat": 26.01667
+    }
+  },
+  {
+    "id": 1275368,
+    "name": "Boisar",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 72.75,
+      "lat": 19.799999
+    }
+  },
+  {
+    "id": 1275384,
+    "name": "Bodri",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 81.433327,
+      "lat": 23.16667
+    }
+  },
+  {
+    "id": 1275388,
+    "name": "Bodināyakkanūr",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 77.349998,
+      "lat": 10.01667
+    }
+  },
+  {
+    "id": 1275389,
+    "name": "Buddh Gaya",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 84.98333,
+      "lat": 24.700001
+    }
+  },
+  {
+    "id": 1275391,
+    "name": "Bodhan",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 77.900002,
+      "lat": 18.66667
+    }
+  },
+  {
+    "id": 1275406,
+    "name": "Bobbili",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 83.366669,
+      "lat": 18.566669
+    }
+  },
+  {
+    "id": 1275426,
+    "name": "Bithūr",
+    "state": "",
+    "country": "IN",
+    "coord": {
+      "lon": 80.283333,
+      "lat": 26.633329
+    }
+  }
+]
